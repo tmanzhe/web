@@ -38,8 +38,8 @@
 }
 
 .description {
-    margin-top: 60px;
-    margin-left: 60px;
+    margin-top: 50px;
+    margin-left: 50px;
     padding: 20px; 
     background-color: rgba(255, 255, 255, 0.8);
     color: rgb(65, 63, 63);
@@ -65,29 +65,37 @@
 
 .hello-text {
     width: 13ch; /* Adjust width for typewriter effect */
-    animation: typing 2s steps(22) forwards, blink .5s step-end infinite alternate; /* Typewriter effect */
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
     font-size: 40px;
     font-weight: bold;
     margin: 0;
+    /* Initial state, before animation is triggered */
+    visibility: hidden;
+    animation: none; 
 }
 
 .animate .hello-text {
-    animation: typing 2s steps(22) forwards, blink .5s step-end infinite alternate; /* Reset animation on visibility */
+    visibility: visible; /* Make the text visible when section is in view */
+    animation: typing 2s steps(22) forwards, blink .5s step-end infinite alternate; /* Typewriter effect when visible */
 }
 
 @keyframes typing {
     from {
         width: 0;
     }
+    to {
+        width: 13ch;
+    }
 }
+
 @keyframes blink {
     50% {
         border-color: transparent;
     }
 }
+
 
 .highlight-dev {
     background-color: #FEF9D9; 
