@@ -1,0 +1,46 @@
+header {
+    background-color: #F1F1EF;    
+    opacity: 0.9; /* Fixed opacity value */
+    margin: 15px auto;
+    padding: 10px;
+    max-width: 600px;
+    width: 90%;
+    height: 50px;
+    border-radius: 35px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Keeps the header horizontally centered */
+    transition: transform 0.3s ease-in-out; /* Smooth scroll transition */
+    z-index: 1000;
+}
+
+header a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Helvetica Neue', sans-serif; /* Added fallback font */
+    color: #413F3F;
+}
+
+header a:hover{
+  color: #d8d7d7; 
+
+}
+
+header.hidden {
+    transform: translate(-50%, -100%); /* Use translateY for hiding */
+}
+
+header.visible {
+    transform: translate(-50%, 0); /* Reset the position */
+}
+
+html{
+    scroll-behavior: smooth;
+}
