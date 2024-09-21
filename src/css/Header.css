@@ -12,12 +12,17 @@ header {
     justify-content: space-evenly;
     align-items: center;
 
+    animation: fadeIn 3s ease-in-out forwards; /* Apply fade-in animation */
+
+
     position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%); /* Keeps the header horizontally centered */
-    transition: transform 0.3s ease-in-out; /* Smooth scroll transition */
+    transition: transform 0.5s ease-in-out; /* Smooth scroll transition */
+    
     z-index: 1000;
+
 }
 
 header a {
@@ -43,4 +48,13 @@ header.visible {
 
 html{
     scroll-behavior: smooth;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0; /* Start fully transparent */
+    }
+    100% {
+      opacity: 1; /* Fully visible */
+    }
 }

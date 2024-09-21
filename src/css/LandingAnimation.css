@@ -27,6 +27,8 @@ h1 {
     color: rgb(65, 63, 63);
     position: relative;
     top: 300px;
+    animation: fadeInSlide 4s ease-out forwards; /* Fade and slide in */
+    opacity: 1; /* Make sure it's visible */
 }
 
 .box {
@@ -93,7 +95,9 @@ h1 {
     cursor: pointer;
     transition: transform 0.3s ease;
     color: rgb(65, 63, 63);
-
+    animation: fadeInSlide 2s ease-out forwards; /* Fade and slide in */
+    opacity: 1; /* Make sure it's visible */
+   
 }
 
 .scroll-arrow:hover {

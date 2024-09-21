@@ -42,6 +42,9 @@ import img36 from '../assets/converted/IMG_5238.jpg';
 function Life() {
     return (
         <section id = "my-life" className="life">
+            <h1 className="life-title">life through my lens</h1> 
+
+
             <div className="life-img-container">
                 <img src={img1} alt="Victoria Peak, Hong Kong" />
                 <div className="overlay">

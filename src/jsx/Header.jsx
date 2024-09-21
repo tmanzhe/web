@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../css/header.css';
 
 function Header() {
@@ -22,11 +23,11 @@ function Header() {
 
     return (
         <header className={visible ? 'visible' : 'hidden'}>
-            <a href="#">home</a>
+             <Link to="/">home</Link>
             <a href="#about-me">about me</a>
-            <a href="#">my work</a>
-            <a href="#">resume</a>
-            <a href="#my-life">my life</a>
+            <Link to="/work">my work</Link>
+            <a href="#resume">resume</a>
+            <Link to="/life">my life</Link>
         </header>
     );
 }

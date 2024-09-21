@@ -1,13 +1,33 @@
+
 .life {
     display: flex;
     flex-wrap: wrap;
     gap: 20px; 
     justify-content: center; 
-    margin-top: 150px;
     max-width: 1800px; 
     margin: 0 auto; 
     margin-bottom:100px;
+    margin-top: 250px;
+
+    animation: fadeInSlide 2s ease-out forwards; /* Fade and slide in */
+    opacity: 1; /* Make sure it's visible */
+
 }
+
+
+.life-title {
+    text-align: center; /* Center the title */
+    font-family: 'Helvetica Neue', 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(65, 63, 63);
+    width: 100%; /* Ensure it takes full width */
+    display: block; /* Ensure it’s block-level */
+    position: relative; /* Add relative positioning */
+    margin-top: -400px;
+    z-index: 10; /* Bring title above images */
+}
+
 
 
 

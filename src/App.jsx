@@ -1,23 +1,25 @@
 import React from 'react';
 import Header from './jsx/Header';
 import Footer from './jsx/Footer';
-import LandingAnimation from './jsx/LandingAnimation';
-import AboutMe from './jsx/AboutMe';
-import Life from './jsx/Life';
+import Home from './pages/Home';
+import Life from './pages/Life';
 import './App.css';
-
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
   return (
+    <Router>
       <div id="root">
-          <Header/>
-          <main>
-                <LandingAnimation/>
-                <AboutMe/>
-                <Life/>
-          </main>
-          <Footer/>
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/life" element={<Life />} />
+          </Routes>
+        </main>
+        <Footer />
       </div>
+    </Router>
   );
 }
 

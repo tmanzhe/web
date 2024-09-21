@@ -40,7 +40,7 @@ function AboutMe() {
 
     return (
         <section id="about-me" className={`about-me wrapper ${isVisible ? 'animate' : ''}`} ref={aboutMeRef}>
-            <h2 className="about-title">About Me</h2>
+            <h2 className="about-title">about me</h2>
             <div className="container">
                 <div className="description">
                     <br />

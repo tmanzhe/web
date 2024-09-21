@@ -25,3 +25,17 @@ main {
     font-weight: normal;
     font-style: normal;
 }
+
+@keyframes fadeInSlide {
+    0% {
+      transform: translateY(30px); /* Start slightly above */
+      opacity: 0; /* Start fully transparent */
+    }
+    100% {
+      transform: translateY(0); /* End at the final position */
+      opacity: 1; /* Fully visible */
+    }
+  }
+  
+
+  
