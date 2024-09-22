@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import '../css/AboutMe.css';
-import headshot from '../assets/converted/headshot2.jpg';
+gimport Headshot from '../assets/converted/headshot2.JPG';
+
 
 function AboutMe() {
     const [isVisible, setIsVisible] = useState(false);
@@ -56,7 +57,7 @@ function AboutMe() {
 
                 
                 <div className="image-container">
-                    <img src={headshot} alt="Headshot" className="headshot" />
+                    <img src={Headshot} alt="Headshot" className="headshot" />
                 </div>
             </div>
         </section>
