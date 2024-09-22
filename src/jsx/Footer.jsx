@@ -21,6 +21,7 @@ function Footer() {
                     <FontAwesomeIcon icon={faEnvelope} />
                 </a>
             </div>
+            
         </footer>
     );
 }

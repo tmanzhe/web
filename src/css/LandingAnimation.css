@@ -91,12 +91,11 @@ h1 {
     bottom: 50px; /* Position it near the bottom */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Adjust for centering */
-    font-size: 75px; /* Adjust size as needed */
+    font-size: 50px; /* Adjust size as needed */
     cursor: pointer;
     transition: transform 0.3s ease;
     color: rgb(65, 63, 63);
-    animation: fadeInSlide 2s ease-out forwards; /* Fade and slide in */
-    opacity: 1; /* Make sure it's visible */
+    opacity: 0.8; /* Make sure it's visible */
    
 }
 

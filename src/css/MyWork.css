@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+
+.design-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 100px 0;
+  font-family: Jost;
+}
+
+.timeline {
+    width: 90%; /* Increased width */
+    max-width: 1200px; /* Increased max width for larger screens */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 3px 1.5fr; /* Increased space for content columns */
+    gap: 30px; /* Increased gap for spacing */
+  }
+  
+
+.timeline-content {
+  padding: 25px;
+  background: white; /* Updated background to white */
+  color: rgb(65, 63, 63); /* Updated text color */
+  -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+          box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+  border-radius: 6px; /* Consistent border radius */
+  transition: 0.4s ease;
+  overflow-wrap: break-word !important;
+  width: calc(100% - 40px); /* Increase width while leaving space for padding */
+  width: 90%;
+  margin: 0; /* Remove margin to prevent overflow */
+}
+
+.timeline-middle {
+  position: relative;
+  background-image: linear-gradient(125deg, #93A5CF, #F1F1EF); /* Updated gradient */
+  width: 3px;
+  height: calc(100% + 20px); /* Adjust to ensure it covers the boxes */
+}
+
+.timeline-circle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-image: linear-gradient(125deg, #93A5CF, #F1F1EF); /* Updated gradient */
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width: 768px) {
+  .timeline {
+    grid-template-columns: 1fr 3px 1fr; /* Maintain grid structure for larger screens */
+  }
+}
