@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../css/header.css';
+import '../css/Header.css';
 
 function Header() {
     const [visible, setVisible] = useState(true);

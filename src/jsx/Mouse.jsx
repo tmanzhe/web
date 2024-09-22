@@ -1,6 +1,6 @@
 // Mouse.jsx
 import React, { useEffect } from 'react';
-import '../css/mouse.css'; // This will be the CSS for styling the circles
+import '../css/Mouse.css'; // This will be the CSS for styling the circles
 
 function Mouse() {
     useEffect(() => {
