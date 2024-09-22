@@ -25,7 +25,7 @@ function Header() {
         <header className={visible ? 'visible' : 'hidden'}>
              <Link to="/">home</Link>
             <a href="#about-me">about me</a>
-            <Link to="/work">my work</Link>
+            <a href="#my-work">my work</a>
             <a href="#resume">resume</a>
             <Link to="/life">my life</Link>
         </header>

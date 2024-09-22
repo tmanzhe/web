@@ -10,7 +10,7 @@ function MyWork() {
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
-                    console.log(entry); // Log the entry to see if it's being detected
+                    console.log(entry); 
                     if (entry.isIntersecting) {
                         entry.target.classList.add('in-view');
                     } else {
@@ -28,7 +28,9 @@ function MyWork() {
     
 
     return (
-        <section className="design-section" ref={timelineRef}>
+        <section id = "my-work" className="design-section" ref={timelineRef}>
+            <h1 className = "my-work-text">my work</h1>
+
             <div className="timeline">
                 {/* Empty div for spacing */}
                 <div className="timeline-empty"></div>
@@ -41,11 +43,13 @@ function MyWork() {
                 {/* Timeline content components */}
                 <div className="timeline-component timeline-content">
                     <h3>Mobile Dev @ ITMZ</h3>
+                    <small> 2024-2024 </small>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni reiciendis, iusto id incidunt dolores blanditiis perferendis rerum nihil autem repudiandae, et distinctio? Possimus neque quidem ut dolorem, facere repellendus esse.</p>
                 </div>
 
                 <div className="timeline-component timeline-content">
                     <h3>Self-Driving Car Using Neural Network</h3>
+                    <small> 2024-2024 </small>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni reiciendis, iusto id incidunt dolores blanditiis perferendis rerum nihil autem repudiandae, et distinctio? Possimus neque quidem ut dolorem, facere repellendus esse.</p>
                 </div>
 
@@ -64,11 +68,13 @@ function MyWork() {
 
                 <div className="timeline-component timeline-content">
                     <h3>Virtual Mouse</h3>
+                    <small> 2024-2024 </small>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni reiciendis, iusto id incidunt dolores blanditiis perferendis rerum nihil autem repudiandae, et distinctio? Possimus neque quidem ut dolorem, facere repellendus esse.</p>
                 </div>
 
                 <div className="timeline-component timeline-content">
                     <h3>IDK Last Project</h3>
+                    <small> 2024-2024 </small>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni reiciendis, iusto id incidunt dolores blanditiis perferendis rerum nihil autem repudiandae, et distinctio? Possimus neque quidem ut dolorem, facere repellendus esse.</p>
                 </div>
             </div>
