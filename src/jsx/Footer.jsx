@@ -11,7 +11,7 @@ function Footer() {
             </p>
             
             <div className="socials">
-                <a href="https://www.linkedin.com/in/cu-trumanchan" target="_blank" rel="noreferrer">
+                <a href="https://www.linkedin.com/in/trumanchan" target="_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faLinkedin} />
                 </a>
                 <a href="https://github.com/tmanzhe" target="_blank" rel="noreferrer">
@@ -21,7 +21,7 @@ function Footer() {
                     <FontAwesomeIcon icon={faEnvelope} />
                 </a>
             </div>
-            
+
         </footer>
     );
 }
